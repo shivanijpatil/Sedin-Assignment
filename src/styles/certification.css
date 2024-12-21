@@ -1,0 +1,30 @@
+.certification_main{
+    margin: 1.5rem 0;
+    height: 35vh;
+    background-color: #FAF3EA;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub_div{
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.sub_div_title{
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+.sub_div_icon{
+    width: 60px;
+    float: left;
+    margin: 0 3px;
+}
+
+.sub_div_detail{
+    font-size: 15px;
+}

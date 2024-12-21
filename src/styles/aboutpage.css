@@ -1,0 +1,75 @@
+.about_banner_section{
+    background-image: url(../images/ContactBanner.png);
+    height: 45vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_title{
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.about_logo{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.about_story_section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem;
+    height: fit-content;
+}
+
+.sub_story_section1{
+    height: auto;
+    width: 80vh;
+}
+
+.sub_story_section1_img{
+    width: 80vh;
+}
+
+.sub_story_section2{
+    margin: 1rem;
+    width: 80vh;
+    padding: 1rem;
+}
+
+.sub_story_section_title1{
+    text-transform: capitalize;
+    color: #B88E2F;
+}
+
+.sub_story_section_title2{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.sub_story_section_para{
+    text-align: justify;
+}
+
+.about_mission_section{
+    margin: 0 10rem 3rem 10rem ;
+    text-align: center;
+}
+
+.about_mission_section_title1{
+    text-transform: uppercase;
+    color: #B88E2F;
+}
+
+.about_mission_section_title2{
+    font-size: x-large;
+    font-weight: bold;
+
+}

@@ -1,0 +1,66 @@
+
+
+.main_footer{
+    border-top: grey solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.sub_footer{
+    width: fit-content;
+    height: fit-content;
+    margin: 2rem 0;
+    padding: .25rem;
+}
+
+.footer_title{
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.footer_address{
+    color: grey;
+}
+
+.footer_link_title{
+    display: block;
+    color: grey;
+    margin: .75rem 0;
+}
+
+.sub_footer a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.footer_email_subscription{
+    outline: none;
+    border: none;
+    border-bottom: solid 2px grey;
+}
+
+.footer_subscription_button{
+    margin: 0 .35rem;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-bottom: solid 2px black;
+}
+
+.footer_hr{
+    margin: 0 2rem;
+    border-top: 1px solid grey;
+}
+
+.footer_copywrite{
+    display: block;
+    margin: 2rem;
+    text-align: center;
+}

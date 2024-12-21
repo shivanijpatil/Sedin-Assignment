@@ -1,0 +1,23 @@
+.cart_banner_section{
+    background-image: url(../images/ContactBanner.png);
+    height: 45vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart_title{
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.cart_logo{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}

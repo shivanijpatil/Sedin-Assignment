@@ -1,0 +1,99 @@
+.contact_banner_section{
+    background-image: url(../images/ContactBanner.png);
+    height: 45vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_title{
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.contact_logo{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.contact_form_section{
+    margin: 2.5rem 0;
+}
+
+.contact_form_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form_title_text{
+    text-transform: capitalize;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.contact_form_para{
+    text-align: center;
+    margin: 0;
+}
+
+.contact_main_form_div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.contact_sub_form_div{
+    width: fit-content;
+    height: fit-content;
+}
+
+.contact_sub_form_detail{
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.detail_title{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.contact_input_section{
+    flex-direction: column;
+    margin: 1.25rem 0;
+}
+
+.label{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.input{
+    padding: 1rem;
+    width: 350px;
+    border: grey 1px solid;
+    outline: none;
+    border-radius: 10px;
+    margin-top: .75rem;
+}
+
+.form_submit_button{
+    background-color: #B88E2F;
+    outline: none;
+    border: none;
+    padding: 1rem 5rem;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.form_submit_button:hover{
+    background-color: #fdb100;
+}
