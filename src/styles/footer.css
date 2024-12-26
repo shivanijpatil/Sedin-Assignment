@@ -1,66 +1,163 @@
-
-
-.main_footer{
+/* Default Layout for Desktop */
+.main_footer {
     border-top: grey solid 2px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: nowrap; 
     margin-top: 1rem;
+    padding: 2rem 0;
 }
 
-.sub_footer{
+.sub_footer {
     width: fit-content;
-    height: fit-content;
-    margin: 2rem 0;
-    padding: .25rem;
+    margin: 1rem;
+    padding: 0.25rem;
 }
 
-.footer_title{
+.footer_title {
     display: block;
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
-.footer_address{
+.footer_address {
     color: grey;
 }
 
-.footer_link_title{
+.footer_link_title {
     display: block;
     color: grey;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
+    font-size: 16px;
 }
 
-.sub_footer a{
+.sub_footer a {
     display: block;
     text-decoration: none;
     color: black;
     text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 
-.footer_email_subscription{
+.footer_email_subscription {
     outline: none;
     border: none;
     border-bottom: solid 2px grey;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
-.footer_subscription_button{
-    margin: 0 .35rem;
+.footer_subscription_button {
+    margin: 0.5rem 0;
     text-transform: uppercase;
     background: none;
     outline: none;
     border: none;
     font-weight: bold;
     border-bottom: solid 2px black;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-.footer_hr{
-    margin: 0 2rem;
+.footer_hr {
+    margin: 1rem 2rem;
     border-top: 1px solid grey;
 }
 
-.footer_copywrite{
+.footer_copywrite {
     display: block;
     margin: 2rem;
     text-align: center;
+    font-size: 14px;
+}
+
+/* Tablet Layout (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .main_footer {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding: 1.5rem 1rem;
+    }
+
+    .sub_footer {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .footer_title {
+        font-size: 28px; 
+    }
+
+    .footer_link_title {
+        font-size: 14px; 
+    }
+
+    .footer_email_subscription {
+        width: 80%; 
+    }
+}
+
+/* Mobile Layout (max-width: 768px) */
+@media (max-width: 768px) {
+    .main_footer {
+        flex-direction: column; 
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .sub_footer {
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer_title {
+        font-size: 24px; 
+    }
+
+    .footer_link_title {
+        font-size: 14px;
+    }
+
+    .sub_footer a {
+        font-size: 12px;
+    }
+
+    .footer_email_subscription {
+        width: 90%; 
+    }
+
+    .footer_subscription_button {
+        font-size: 12px;
+    }
+
+    .footer_copywrite {
+        font-size: 12px;
+        margin: 1rem;
+    }
+}
+
+/* Small Phone Layout (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer_title {
+        font-size: 20px; 
+    }
+
+    .footer_address {
+        font-size: 12px;
+    }
+
+    .footer_link_title {
+        font-size: 12px;
+    }
+
+    .footer_subscription_button {
+        font-size: 10px;
+    }
+
+    .footer_copywrite {
+        font-size: 10px;
+    }
 }

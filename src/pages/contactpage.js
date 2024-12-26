@@ -67,7 +67,7 @@ function ContactPage() {
           </div>
         </div>
       </div>
-      <Certification/>
+      <Certification />
     </div>
   );
 }

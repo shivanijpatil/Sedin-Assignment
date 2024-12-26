@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
@@ -8,21 +8,32 @@ import search from '../images/icons/search.png';
 import userProfile from '../images/icons/user.png';
 
 function Navbar() {
+    const [menuActive, setMenuActive] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuActive(!menuActive);
+    };
+
     return (
         <div className="navbar">
             <Link to="/" className="nav_logo">
                 <img alt="" src={Logo} className="nav_logo_img" />
                 furniro
             </Link>
-            <ul className="navbar_page_links">
+            <div className="hamburger" onClick={toggleMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul className={`navbar_page_links ${menuActive ? "active" : ""}`}>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={toggleMenu}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/shop">Shop</Link>
+                    <Link to="/shop" onClick={toggleMenu}>Shop</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" onClick={toggleMenu}>Contact</Link>
                 </li>
             </ul>
 
